@@ -1,13 +1,41 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Analizador de texto</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="imagenes/favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" type="module"></script>
+  <script src="analyzer.js" type="module"></script>
 </head>
 
 <body>
-  <script src="index.js" type="module"></script>
+  <header>
+      <h1>📝Analizador de texto</h1>
+  </header>
+  <main>
+    <ul class="no-style">
+      <li class="box" data-testid="word-count">word-count:   </li>
+      <li class="box" data-testid="character-count">character-count: </li>
+      <li class="box" data-testid="character-no-spaces-count">character-no-spaces-count: </li>
+      <li class="box" data-testid="number-count">number-count: </li>
+      <li class="box" data-testid="number-sum">number-sum: </li>
+      <li class="box" data-testid="word-length-average">word-length-average: </li>
+    </ul>
+    <form>
+      <textarea name="user-input" cols="50" rows="10" placeholder="Ingresa el texto aquí" ></textarea>
+    </form>
+    
+ 
+    <button id="reset-button" title="Limpiar métricas">Limpiar métricas</button>
+
+  </main>
+
+  <footer>
+    <p>&copy; Wendy Chirinos DEV013-Laboratoria 2023 </p>
+  </footer>
+
 </body>
+
 </html>

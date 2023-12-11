@@ -1,0 +1,96 @@
+/* Estilos generales (reseteando los predeterminados por los navegadores) */
+
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Definiendo mi paleta de colores con la función Var() */
+:root {
+    --Olivine: #8cb369;
+    --Flax: #f4e285;
+    --Sandy-brown:#f4a259;
+    --varidian: #5b8e7d;
+    --Bittersweet-shimmer: #bc4b51;
+    --Black: #000000;
+    --White: #ffffff;
+}
+
+body {
+    margin: 0;
+    background: url(imagenes/crumpled-paper.jpg);
+}
+
+header {
+    color: var(--Olivine);
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+.no-style {
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 600px;
+}
+
+.box {
+    border: solid;
+    border-color: Var(--Sandy-brown);
+    border-radius: 5px;
+    background-color: var(--Flax);
+    padding: 2px;
+    margin: 5px;
+    height: 30px;
+}
+
+[name="user-input"] {
+    margin: 20px;
+}
+
+[name="user-input"]:hover {
+    margin: 20px;
+    border: solid;
+    border-color: var(--Olivine);
+}
+
+button {
+    border: solid;
+    border-color: var(--Sandy-brown);
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: var(--Flax);
+    padding: 5px;
+}
+
+#reset-button:hover {
+    border: solid;
+    border-color: var(--Sandy-brown);
+    border-radius: 5px;
+    background-color: var(--Bittersweet-shimmer);
+    padding: 5px;
+
+}
+
+footer {
+    color: var(--Black);
+    margin-top: 100px;
+    text-align: center;
+}
+
+footer:hover {
+    color: var(--Olivine);
+}
