@@ -41,11 +41,15 @@ main {
 .no-style {
     list-style-type: none;
     text-align: center;
+    margin: 10px;
+    border:50px;
+    padding: 30px; 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 600px;
 }
+
 
 .box {
     border: solid;
