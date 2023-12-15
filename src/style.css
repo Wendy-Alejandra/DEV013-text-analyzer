@@ -61,17 +61,17 @@ main {
     height: 30px;
 }
 
-[name="user-input"] {
+textarea[name="user-input"] {
     margin: 20px;
 }
 
-[name="user-input"]:hover {
+textarea[name="user-input"]:hover {
     margin: 20px;
     border: solid;
     border-color: var(--Olivine);
 }
 
-button {
+#reset-button {
     border: solid;
     border-color: var(--Sandy-brown);
     border-radius: 5px;
