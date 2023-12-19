@@ -1,34 +1,66 @@
 const analyzer = {  
   getWordCount: (text) => {
     //TODO: esta función debe retornar el recuento de palabras que se encuentran en el parámetro `text` de tipo `string`.
-    //PASOS: 1. Obtener texto, 2. Partir el texto en porciones, 3. Contar palabras, 4. Mostrar resultado
-    const wordCount = text.split(" ").length;
-    console.log(wordCount);
-    // if (wordCount === 0) {
-    //   document.write("word-count: 0")
-    // } else
-      return wordCount;
+    //PASOS: 1. Obtener texto, 2. Partir el texto en porciones, 3. Contar porciones(palabras), 4. Mostrar resultado
+    const wordCount = text.trim().split(" ").length;
+    // console.log(wordCount);
+    return wordCount;
   },
 
   getCharacterCount: (text) => {
     //TODO: esta función debe retornar el recuento de caracteres que se encuentran en el parámetro `text` de tipo `string`.
-    //PASOS: 1. Obtener texto, 2. Contar caracteres, 3. Mostrar resultado
-  
-  },
-  getCharacterCountExcludingSpaces: (text) => {
+    //PASOS: 1. Obtener texto, 2. Contar cada caracter del texto, 3.Mostrar resultado
 
-    // trim().length()
-    //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
+    let characterCount = 0;
+    for (let i=0; i<text.length; i++) {
+      characterCount++;
+    }
+    return characterCount;
   },
+
+  getCharacterCountExcludingSpaces: (text) => {
+    //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
+    //PASOS: 1. Obtener texto, 2. Eliminar los espacios y signos, 3. Contar cada caracter del texto, 4. Mostrar resultado 
+    //SIGNOS: . , ; : ... ¿? ¡! () [] {} "" '' | ¨ / \ * 
+  
+    const ExcludingSpaces = text.replace(/\W/g, "").length;
+    return ExcludingSpaces;
+
+  },
+
   getAverageWordLength: (text) => {    
     //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
+    //PASOS: 1. Obtener texto, 2. Llamar a la función contar palabras, 3. Contar la longitud de cada palabra, 4.sumar todas las palabras 
+    //4. Dividir por la cant. de palabras (getWordCount()) 5. 
+
+    const wordlength = text.replace(/\s/g,"").length;
+    const totalWords= analyzer.getWordCount(text);
+    const avrg = wordlength / totalWords;
+
+    return Math.round(avrg*100)/100;
   },
+
   getNumberCount: (text) => {
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
+    //PASOS: 1. Obtener texto, 2. buscar numeros con regex, 3. Sacar la longitud de los numeros, 4. Mostrar resultado
+
+    const num = text.replace(/\D/g,"").length;
+    console.log(num);
+    return num;
   },
+
   getNumberSum: (text) => {
     //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
+    //PASOS: 1. Obtener texto, 2. crear un arreglo, 3. recorrer el arreglo, 4. sumar los items del arreglo.
+
+    const num = text.replace(/\D/g,"").split("");
+    let sumaNum = 0;
+    for (let i=0; i<num.length; i++) {
+      sumaNum += parseFloat(num[i]);
+    }
+    return sumaNum;
   },
+
 };
 
 export default analyzer;
