@@ -37,8 +37,7 @@ main {
     align-items: center;
 }
 
-
-.no-style {
+ul {
     list-style-type: none;
     text-align: center;
     margin: 10px;

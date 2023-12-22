@@ -19,8 +19,8 @@ function mostrarMetricas() {
   wordCount.innerHTML= "word-count: " + analyzer.getWordCount(text);
   characterCount.innerHTML= "character-count: " + analyzer.getCharacterCount(text);
   characterNoSpacesCount.innerHTML= "character-no-spaces-count: " + analyzer.getCharacterCountExcludingSpaces(text);
-  numberCount.innerHTML= "number-count: " + analyzer.getNumberCount(text);
-  numberSum.innerHTML= "number-sum: " + analyzer.getNumberSum(text);
+  numberCount.textContent= "number-count: " + analyzer.getNumberCount(text);
+  numberSum.textContent= "number-sum: " + analyzer.getNumberSum(text);
   wordLengthAverage.innerHTML= "word-length-average: " + analyzer.getAverageWordLength(text);
 }
 

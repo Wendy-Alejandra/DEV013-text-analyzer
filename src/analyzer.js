@@ -3,7 +3,6 @@ const analyzer = {
     //TODO: esta función debe retornar el recuento de palabras que se encuentran en el parámetro `text` de tipo `string`.
     //PASOS: 1. Obtener texto, 2. Partir el texto en porciones, 3. Contar porciones(palabras), 4. Mostrar resultado
     const wordCount = text.trim().split(" ").length;
-    // console.log(wordCount);
     return wordCount;
   },
 
@@ -44,23 +43,37 @@ const analyzer = {
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
     //PASOS: 1. Obtener texto, 2. buscar numeros con regex, 3. Sacar la longitud de los numeros, 4. Mostrar resultado
 
-    const num = text.replace(/\D/g,"").length;
-    console.log(num);
-    return num;
+    const list = text.match(/\d+([/.]\d+)?\b/gi);
+    let cantNum = 0;
+    console.log(list);
+    if (list === null) {
+      return 0
+    } else {
+      for (let i=0; i<list.length; i++) {
+        cantNum++;
+      }
+    }
+
+    return cantNum;
   },
 
   getNumberSum: (text) => {
     //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
     //PASOS: 1. Obtener texto, 2. crear un arreglo, 3. recorrer el arreglo, 4. sumar los items del arreglo.
 
-    const num = text.replace(/\D/g,"").split("");
-    let sumaNum = 0;
-    for (let i=0; i<num.length; i++) {
-      sumaNum += parseFloat(num[i]);
+    const list = text.match(/\d+([/.]\d+)?\b/gi);
+    let sumNum = 0;
+    console.log(list);
+    if (list === null) {
+      return 0
+    } else {
+      for (let i=0; i<list.length; i++) {
+        sumNum+= parseFloat(list[i]);
+      }
     }
-    return sumaNum;
-  },
 
+    return sumNum;
+  },
 };
 
 export default analyzer;
