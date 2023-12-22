@@ -45,7 +45,6 @@ const analyzer = {
 
     const list = text.match(/\d+([/.]\d+)?\b/gi);
     let cantNum = 0;
-    console.log(list);
     if (list === null) {
       return 0
     } else {
@@ -63,7 +62,6 @@ const analyzer = {
 
     const list = text.match(/\d+([/.]\d+)?\b/gi);
     let sumNum = 0;
-    console.log(list);
     if (list === null) {
       return 0
     } else {
