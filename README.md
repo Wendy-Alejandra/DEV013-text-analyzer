@@ -64,20 +64,20 @@ relacionados con cada objetivo de aprendizaje.
 
 * **Uso de HTML semántico**
 
-  - [ ] La aplicación tiene un encabezado conformado por un
+  - [x] La aplicación tiene un encabezado conformado por un
   [`<header>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header)
   que es padre de un
   [`<h1>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h1)
   con texto `Analizador de texto`. Para que puedas practicar más, estos
   elementos no pueden tener atributos `id`, ni `name`, ni `class`.
 
-  - [ ] La aplicación usa un
+  - [x] La aplicación usa un
   [`<textarea>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)
   con un el atributo `name` en el valor `user-input` para permitir a la usuaria
   ingresar un texto. Para que puedas practicar más, este elemento no puede
   tener atributos `id`, ni `class`.
 
-  - [ ] La aplicación usa un
+  - [x] La aplicación usa un
   [`<ul>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul)
   con 6 hijos [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li),
   uno para mostrar cada métrica.  Para que puedas practicar más, estos
@@ -484,13 +484,13 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 ### Centrado en el usuario
 
-- [ ] **Diseñar y desarrollar un producto o servicio poniendo a las usuarias en el centro**
+- [x] **Diseñar y desarrollar un producto o servicio poniendo a las usuarias en el centro**
 
 ### Diseño de producto
 
-- [ ] **Diseñar en distintos niveles de fidelidad**
+- [x] **Diseñar en distintos niveles de fidelidad**
 
-- [ ] **Seguir los principios básicos de diseño visual**
+- [x] **Seguir los principios básicos de diseño visual**
 
 
 
