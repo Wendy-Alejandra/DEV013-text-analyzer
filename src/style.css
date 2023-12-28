@@ -12,7 +12,7 @@
     --Sandy-brown:#f4a259;
     --varidian: #5b8e7d;
     --Bittersweet-shimmer: #bc4b51;
-    --Black: #000000;
+    --Black: #333333;
     --White: #ffffff;
 }
 
@@ -35,6 +35,7 @@ main {
     justify-content: center;
     text-align: center;
     align-items: center;
+    color: var(--Black)
 }
 
 ul {
@@ -62,6 +63,7 @@ ul {
 
 textarea[name="user-input"] {
     margin: 20px;
+    color: var(--Black)
 }
 
 textarea[name="user-input"]:hover {
@@ -77,6 +79,7 @@ textarea[name="user-input"]:hover {
     font-weight: bold;
     background-color: var(--Flax);
     padding: 5px;
+    color: var(--Black);
 }
 
 #reset-button:hover {
