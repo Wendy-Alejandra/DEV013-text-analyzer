@@ -70,7 +70,7 @@ const analyzer = {
       }
     }
 
-    return sumNum;
+    return Math.round(sumNum*10)/10;
   },
 };
 
