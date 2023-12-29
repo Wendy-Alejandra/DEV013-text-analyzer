@@ -1,15 +1,25 @@
+## Índice
+
+[Analizador de texto](#Analizador-de-texto)
+
+[1. Prototipo](#1-prototipo)
+
+[2. Funcionalidades](#2-🔨funcionalidades)
+
+[3. Criterios de aceptación mínimos del proyecto](#3-criterios-de-aceptación-mínimos-del-proyecto)
+
+[4. Consideraciones para pedir tu Project Feedback](#4-consideraciones-para-pedir-tu-project-feedback)
+
+[5. Objetivos de aprendizaje](#5-objetivos-de-aprendizaje)
+
+
 # 📝Analizador de texto
 Esta es una aplicación para extraer información útil de un
 texto utilizando diversas técnicas, como el procesamiento del lenguaje
 natural (NLP), el aprendizaje automático (ML) y el análisis estadístico.
 Estas aplicaciones pueden proporcionar una variedad de métricas que brindan
 información básica sobre la longitud y la estructura del texto como por
-ejemplo, el conteo de palabras, el conteo de caracteres, el conteo de
-oraciones y el conteo de párrafos. Otras métricas incluyen el análisis
-de sentimientos, que utiliza técnicas de NLP para determinar el tono
-general positivo, negativo o neutral del texto, y el análisis de
-legibilidad, que utiliza algoritmos para evaluar la complejidad y la
-legibilidad del texto.
+ejemplo, el conteo de palabras, el conteo de caracteres, entre otros.
 
 En general, las aplicaciones de análisis de texto brindan información
 valiosa y métricas sobre los textos que pueden ayudar a las usuarias a
@@ -21,9 +31,10 @@ Esta aplicación se creó utilizando: HTML, CSS y JavaScript.
 
 ## 1. Prototipo
 
-![Prototipo de baja fidelidad](Prototipo-Baja-Fidelidad.jpg)
-![Prototipo de alta fidelidad](Prototipo-Alta-Fidelidad.png)<br>
-(https://wendy-alejandra.github.io/DEV013-text-analyzer/src/)
+<p align="center">
+<img src= Prototipo-Baja-Fidelidad.jpg><br>
+<img src= Prototipo-Alta-Fidelidad.png>
+</p>
 
 ## 2. 🔨Funcionalidades
 
@@ -52,7 +63,11 @@ medida que la usuaria escribe su texto:
 3. La aplicación permite limpiar el contenido de la caja de texto haciendo
 clic en un botón.
 
-![Text analyzer demo](https://github-production-user-asset-6210df.s3.amazonaws.com/12631491/240650556-988dcd6f-bc46-473b-894c-888a66c9fe2d.gif "Text analyzer demo")
+<p align="center">
+<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/12631491/240650556-988dcd6f-bc46-473b-894c-888a66c9fe2d.gif">
+</p>
+
+<!-- ![Text analyzer demo](https://github-production-user-asset-6210df.s3.amazonaws.com/12631491/240650556-988dcd6f-bc46-473b-894c-888a66c9fe2d.gif "Text analyzer demo") -->
 
 
 
@@ -490,6 +505,10 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 ### Diseño de producto
 
 - [x] **Diseñar en distintos niveles de fidelidad**
+
+<p align="center">
+<img src=Prototipo-Baja-Fidelidad.png>
+</p>
 
 - [x] **Seguir los principios básicos de diseño visual**
 
