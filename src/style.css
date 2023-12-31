@@ -41,7 +41,7 @@ main {
 ul {
     list-style-type: none;
     text-align: center;
-    margin: 10px;
+    margin: 5px;
     border:50px;
     padding: 30px; 
     display: flex;
