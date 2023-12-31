@@ -26,12 +26,12 @@ function mostrarMetricas() {
 
 function limpiar() {
   cajaTexto.value= "";
-  wordCount.innerHTML= "word-count: 0";
-  characterCount.innerHTML= "character-count: 0";
-  characterNoSpacesCount.innerHTML= "character-no-spaces-count: 0";
-  numberCount.innerHTML= "number-count: 0";
-  numberSum.innerHTML= "number-sum: 0";
-  wordLengthAverage.innerHTML= "word-length-average: 0";
+  wordCount.textContent= "word-count: 0";
+  characterCount.textContent= "character-count: 0";
+  characterNoSpacesCount.textContent= "character-no-spaces-count: 0";
+  numberCount.textContent= "number-count: 0";
+  numberSum.textContent= "number-sum: 0";
+  wordLengthAverage.textContent= "word-length-average: 0";
 }
 
 // Eventos
