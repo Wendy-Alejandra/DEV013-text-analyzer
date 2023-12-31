@@ -64,7 +64,7 @@ medida que la usuaria escribe su texto:
 clic en un botón.
 
 <p align="center">
-<img src="analizador-texto-wendy-chirinos.GIF">
+<img src="analizador-de-texto-wendy-chirinos.GIF">
 </p>
 
 
