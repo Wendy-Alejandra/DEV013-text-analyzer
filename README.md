@@ -64,11 +64,8 @@ medida que la usuaria escribe su texto:
 clic en un botón.
 
 <p align="center">
-<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/12631491/240650556-988dcd6f-bc46-473b-894c-888a66c9fe2d.gif">
+<img src="analizador-texto-wendy-chirinos.GIF">
 </p>
-
-<!-- ![Text analyzer demo](https://github-production-user-asset-6210df.s3.amazonaws.com/12631491/240650556-988dcd6f-bc46-473b-894c-888a66c9fe2d.gif "Text analyzer demo") -->
-
 
 
 ## 3. Criterios de aceptación mínimos del proyecto
