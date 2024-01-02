@@ -32,7 +32,7 @@ Esta aplicación se creó utilizando: HTML, CSS y JavaScript.
 ## 1. Prototipo
 
 <p align="center">
-<img src= Prototipo-Baja-Fidelidad.jpg><br>
+<img src= Prototipo-Baja-Fidelidad.png>
 <img src= Prototipo-Alta-Fidelidad.png>
 </p>
 
@@ -67,6 +67,7 @@ clic en un botón.
 <img src="analizador-de-texto-wendy-chirinos.GIF">
 </p>
 
+Para acceder al analizador de texto entra a este link: https://wendy-alejandra.github.io/DEV013-text-analyzer/src/
 
 ## 3. Criterios de aceptación mínimos del proyecto
 
@@ -502,10 +503,6 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 ### Diseño de producto
 
 - [x] **Diseñar en distintos niveles de fidelidad**
-
-<p align="center">
-<img src=Prototipo-Baja-Fidelidad.png>
-</p>
 
 - [x] **Seguir los principios básicos de diseño visual**
 
