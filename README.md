@@ -1,19 +1,32 @@
+# 📝Analizador de texto
+
 ## Índice
 
-[Analizador de texto](#Analizador-de-texto)
+[1. Consideraciones generales](#1-consideraciones-generales)
 
-[1. Prototipo](#1-prototipo)
+[2. Preámbulo](#2.preámbulo)
 
-[2. Funcionalidades](#2-🔨funcionalidades)
+[3. Prototipo](#3-prototipo)
 
-[3. Criterios de aceptación mínimos del proyecto](#3-criterios-de-aceptación-mínimos-del-proyecto)
+[4. Funcionalidades](#4-🔨funcionalidades)
 
-[4. Consideraciones para pedir tu Project Feedback](#4-consideraciones-para-pedir-tu-project-feedback)
+[5. Boilerplate](#5-boilerplate)
 
-[5. Objetivos de aprendizaje](#5-objetivos-de-aprendizaje)
+[6. Criterios de aceptación mínimos del proyecto](#6-criterios-de-aceptación-mínimos-del-proyecto)
+
+[7. Pruebas](#7-pruebas)
+
+[8. Objetivos de aprendizaje](#8-objetivos-de-aprendizaje)
+
+[9. Consideraciones para pedir Project Feedback](#9-consideraciones-para-pedir-project-feedback)
 
 
-# 📝Analizador de texto
+## 1. Consideraciones generales
+
+* Este proyecto fue resuelto de forma individual.
+* El lapso de tiempo fue de 3 sprints.
+
+## 2. Preámbulo
 Esta es una aplicación para extraer información útil de un
 texto utilizando diversas técnicas, como el procesamiento del lenguaje
 natural (NLP), el aprendizaje automático (ML) y el análisis estadístico.
@@ -29,14 +42,14 @@ obtener una comprensión más profunda de los textos.
 
 Esta aplicación se creó utilizando: HTML, CSS y JavaScript.
 
-## 1. Prototipo
+## 3. Prototipo
 
 <p align="center">
 <img src= Prototipo-Baja-Fidelidad.png>
 <img src= Prototipo-Alta-Fidelidad.png>
 </p>
 
-## 2. 🔨Funcionalidades
+## 4. 🔨Funcionalidades
 
 1. La aplicación permite a la usuaria ingresar un texto escribiéndolo
 en un cuadro de texto.
@@ -69,7 +82,17 @@ clic en un botón.
 
 Para acceder al analizador de texto entra a este link: https://wendy-alejandra.github.io/DEV013-text-analyzer/src/
 
-## 3. Criterios de aceptación mínimos del proyecto
+## 5. Boilerplate
+
+La lógica del proyecto debe estar implementada completamente en JavaScript. En este proyecto NO está permitido usar librerías o frameworks, solo JavaScript puro también conocido como Vanilla JavaScript.
+
+Para comenzar este proyecto tendrás que hacer un fork y clonar este repositorio que contiene un boilerplate con tests (pruebas). Un boilerplate es la estructura básica de un proyecto que sirve como un punto de partida con archivos y configuración inicial de dependencias y tests.
+
+El boilerplate que les damos contiene esta estructura:
+
+![Alt text](image.png)
+
+## 6. Criterios de aceptación mínimos del proyecto
 
 A continuación encontrarás los criterios de aceptación mínimos del proyecto
 relacionados con cada objetivo de aprendizaje.
@@ -324,8 +347,41 @@ usuarias en el centro**
   para diseñar la UI (interfáz gráfica)
 
 
-## 4. Objetivos de aprendizaje
+## 7. Pruebas
 
+Para saber si el proyecto cumple con los criterios mínimos de aceptación, el programa debe pasar exitosamente las siguientes pruebas:
+
+### Pruebas unitarias
+
+Una prueba unitaria es una técnica de prueba de software en la que se comprueba que cada componente individual de un programa o sistema funciona correctamente de manera aislada. En otras palabras, se prueba cada unidad de código por separado para asegurarse de que cumpla con los requisitos y especificaciones.
+
+Esta prueba ejecutará cada método dentro del objeto analyzer mediante el uso del comando `npm run test`.
+
+### Pruebas de criterios mínimos de aceptación
+
+Estas pruebas analizarán los archivos index.html, index.js, analyzer.js y style.css para verificar que se cumple con los criterios minimos de aceptacion. Cada criterio esta relacionado con un objetivo de aprendizaje.
+
+Estas pruebas se ejecutan con el comando general `npm run test:oas` y también se puede correr la prueba para cada archivo con los siguientes comandos:
+
+* `npm run test:oas-html`
+* `npm run test:oas-css`
+* `npm run test:oas-web-api`
+* `npm run test:oas-js`
+
+### Pruebas end-to-end
+
+Una prueba end-to-end (E2E) es una técnica de prueba de software en la que se verifica el funcionamiento de todo el sistema desde el inicio hasta el final. En otras palabras, se prueba el flujo completo del software, simulando la interacción de la usuaria con la aplicación, para asegurarse de que todas las partes del sistema funcionan correctamente en conjunto.
+
+Para ejecutar esta prueba, se utiliza el comando `npm run test:e2e`.
+
+### Github actions
+
+Este repositorio usa una GitHub Action para ejecutar automáticamente las pruebas unitarias, pruebas de criterios mínimos de aceptación y y pruebas end-to-end cada vez que se hagas un push en la rama main de tu repositorio.
+
+Puedes consultar el resultado de esta Github Action en la pestaña `Actions` del repositorio en Github.
+
+
+## 8. Objetivos de aprendizaje
 
 Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en tu proyecto. Piensa en eso al decidir tu estrategia de trabajo.
 
@@ -489,7 +545,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 - [x] **Seguir los principios básicos de diseño visual**
 
 
-## 5. Consideraciones para pedir tu Project Feedback
+## 9. Consideraciones para pedir Project Feedback
 
 * [x] Cumple con todos los criterios mínimos de aceptación al ejecutar `npm run test:oas`
 * [x] Cumple con todas las pruebas unitarias al ejecutar `npm run test`
