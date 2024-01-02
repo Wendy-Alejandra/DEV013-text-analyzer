@@ -324,25 +324,7 @@ usuarias en el centro**
   para diseñar la UI (interfáz gráfica)
 
 
-## 4. Consideraciones para pedir tu Project Feedback
-
-Antes de agendar tu Project Feedback con un coach, asegúrate que tu proyecto:
-
-* [x] Cumple con todos los criterios mínimos de aceptación al ejecutar `npm run test:oas`
-* [x] Cumple con todas las pruebas unitarias al ejecutar `npm run test`
-* [x] Cumple con todas las pruebas _end to end_ al ejecutar `npm run test:e2e`
-* [x] Esta libre de _errores_ de `eslint` al ejecutar `npm run test`
-* [x] Está subido a GitHub.
-* [x] Esta desplegado en GitHub Pages.
-* [x] Tiene un README con la definición del producto.
-
-Recuerda que debes hacer una autoevaluación de _objetivos de aprendizaje_ y
-_life skills_ desde tu dashboard de estudiante.
-
-Si no has completado todo lo anterior, no consideramos que estás lista para
-tu sesión de Project Feedback.
-
-## 5. Objetivos de aprendizaje
+## 4. Objetivos de aprendizaje
 
 
 Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en tu proyecto. Piensa en eso al decidir tu estrategia de trabajo.
@@ -507,6 +489,14 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 - [x] **Seguir los principios básicos de diseño visual**
 
 
+## 5. Consideraciones para pedir tu Project Feedback
 
+* [x] Cumple con todos los criterios mínimos de aceptación al ejecutar `npm run test:oas`
+* [x] Cumple con todas las pruebas unitarias al ejecutar `npm run test`
+* [x] Cumple con todas las pruebas _end to end_ al ejecutar `npm run test:e2e`
+* [x] Esta libre de _errores_ de `eslint` al ejecutar `npm run test`
+* [x] Está subido a GitHub.
+* [x] Esta desplegado en GitHub Pages.
+* [x] Tiene un README con la definición del producto.
 
-
+Autoevaluación de _objetivos de aprendizaje_ y _life skills_ del dashboard de estudiante completado
