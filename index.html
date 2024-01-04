@@ -6,7 +6,7 @@
   <title>Analizador de texto</title>
   <link rel="icon" type="image/png" href="imagenes/favicon.png">
   <link rel="stylesheet" href="style.css">
-
+  <script defer src="index.js" type="module"></script>
 </head>
 
 <body>
@@ -14,29 +14,23 @@
       <h1>📝Analizador de texto</h1>
   </header>
   <main>
-    <ul class="no-style">
-      <li class="box" data-testid="word-count">word-count:   </li>
-      <li class="box" data-testid="character-count">character-count: </li>
-      <li class="box" data-testid="character-no-spaces-count">character-no-spaces-count: </li>
-      <li class="box" data-testid="number-count">number-count: </li>
-      <li class="box" data-testid="number-sum">number-sum: </li>
-      <li class="box" data-testid="word-length-average">word-length-average: </li>
+    <ul>
+      <li class="box" data-testid="word-count">word-count: 0 </li>
+      <li class="box" data-testid="character-count">character-count: 0</li>
+      <li class="box" data-testid="character-no-spaces-count">character-no-spaces-count: 0</li>
+      <li class="box" data-testid="number-count">number-count: 0</li>
+      <li class="box" data-testid="number-sum">number-sum: 0</li>
+      <li class="box" data-testid="word-length-average">word-length-average: 0</li>
     </ul>
     <form>
       <textarea name="user-input" cols="50" rows="10" placeholder="Ingresa el texto aquí" ></textarea>
     </form>
-    
- 
     <button type="reset" id="reset-button">Limpiar métricas</button>
-
   </main>
 
   <footer>
     <p>&copy; Wendy Chirinos DEV013-Laboratoria 2023 </p>
   </footer>
 
-  <script src="index.js" type="module"></script>
-
 </body>
-
 </html>

@@ -12,7 +12,7 @@
     --Sandy-brown:#f4a259;
     --varidian: #5b8e7d;
     --Bittersweet-shimmer: #bc4b51;
-    --Black: #000000;
+    --Black: #333333;
     --White: #ffffff;
 }
 
@@ -35,13 +35,13 @@ main {
     justify-content: center;
     text-align: center;
     align-items: center;
+    color: var(--Black)
 }
 
-
-.no-style {
+ul {
     list-style-type: none;
     text-align: center;
-    margin: 10px;
+    margin: 5px;
     border:50px;
     padding: 30px; 
     display: flex;
@@ -61,23 +61,25 @@ main {
     height: 30px;
 }
 
-[name="user-input"] {
+textarea[name="user-input"] {
     margin: 20px;
+    color: var(--Black)
 }
 
-[name="user-input"]:hover {
+textarea[name="user-input"]:hover {
     margin: 20px;
     border: solid;
     border-color: var(--Olivine);
 }
 
-button {
+#reset-button {
     border: solid;
     border-color: var(--Sandy-brown);
     border-radius: 5px;
     font-weight: bold;
     background-color: var(--Flax);
     padding: 5px;
+    color: var(--Black);
 }
 
 #reset-button:hover {
@@ -91,7 +93,7 @@ button {
 
 footer {
     color: var(--Black);
-    margin-top: 100px;
+    margin-top: 30px;
     text-align: center;
 }
 

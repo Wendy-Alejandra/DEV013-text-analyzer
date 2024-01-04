@@ -3,36 +3,38 @@ import analyzer from './analyzer.js';
 //TODO: escuchar eventos del DOM e invocar  los métodos del objeto `analyzer`
 
 // Declaración de constantes para acceder a los elementos y atributos de HTML
-const actualizarInputs = [
-  document.querySelector("li[data-testid='word-count']"),
-  document.querySelector("li[data-testid='character-count']"),
-  document.querySelector("li[data-testid='character-no-spaces-count']"),
-  document.querySelector("li[data-testid='number-count']"),
-  document.querySelector("li[data-testid='number-sum']"),
-  document.querySelector("li[data-testid='word-length-average']")];
-const limpiarMetricas = document.querySelector(".box");
-// const textoEntrada = document.querySelector("user-input");
+const wordCount = document.querySelector("li[data-testid='word-count']");
+const characterCount = document.querySelector("li[data-testid='character-count']");
+const characterNoSpacesCount = document.querySelector("li[data-testid='character-no-spaces-count']");
+const numberCount = document.querySelector("li[data-testid='number-count']");
+const numberSum = document.querySelector("li[data-testid='number-sum']");
+const wordLengthAverage = document.querySelector("li[data-testid='word-length-average']")
 const cajaTexto = document.querySelector("textarea");
 const clkLimpiar = document.getElementById("reset-button");
 
 // Actualizar Métricas con el evento input del <textarea>
+// Funciones limpiar contenido de la caja de texto y métricas
 function mostrarMetricas() {
   const text = cajaTexto.value;
-  console.log(text);
-  actualizarInputs[0].innerHTML= "word-count: " + analyzer.getWordCount(text);
-
+  wordCount.innerHTML= "word-count: " + analyzer.getWordCount(text);
+  characterCount.innerHTML= "character-count: " + analyzer.getCharacterCount(text);
+  characterNoSpacesCount.innerHTML= "character-no-spaces-count: " + analyzer.getCharacterCountExcludingSpaces(text);
+  numberCount.innerHTML= "number-count: " + analyzer.getNumberCount(text);
+  numberSum.innerHTML= "number-sum: " + analyzer.getNumberSum(text);
+  wordLengthAverage.innerHTML= "word-length-average: " + analyzer.getAverageWordLength(text);
 }
 
-// Limpiar contenido de la caja de texto y métricas
 function limpiar() {
   cajaTexto.value= "";
-  actualizarInputs[0].value= "";
+  wordCount.textContent= "word-count: 0";
+  characterCount.textContent= "character-count: 0";
+  characterNoSpacesCount.textContent= "character-no-spaces-count: 0";
+  numberCount.textContent= "number-count: 0";
+  numberSum.textContent= "number-sum: 0";
+  wordLengthAverage.textContent= "word-length-average: 0";
 }
 
+// Eventos
 cajaTexto.addEventListener("input", mostrarMetricas);
 clkLimpiar.addEventListener("click", limpiar);
 
-// // console.log(clkLimpiar);
-// console.log(analyzer.getWordCount("Hola Mundo de Dios"));
-// // console.log(actualizarInputs[0]);
-// console.log(actualizarMetricas())
