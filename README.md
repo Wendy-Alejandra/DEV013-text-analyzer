@@ -43,6 +43,7 @@ obtener una comprensión más profunda de los textos.
 Esta aplicación se creó utilizando: HTML, CSS y JavaScript.
 
 ## 3. Prototipo
+* Los prototipos fueron realizados en canva.
 
 <p align="center">
 <img src= Prototipo-Baja-Fidelidad.png>
