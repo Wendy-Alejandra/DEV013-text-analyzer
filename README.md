@@ -81,7 +81,7 @@ clic en un botón.
 <img src="analizador-de-texto-wendy-chirinos.GIF">
 </p>
 
-Para acceder al analizador de texto entra a este link: https://wendy-alejandra.github.io/DEV013-text-analyzer/src/
+Para acceder al analizador de texto entra a este link: https://wendy-alejandra.github.io/DEV013-text-analyzer/
 
 ## 5. Boilerplate
 
